@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+
+<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+<script src="bower_components/web-animations-js/web-animations.min.js"></script>
+<link rel="import" href="bower_components/polymerfire/firebase-app.html">
+<link rel="import" href="note-app.html">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <title>HaebinNote</title>
+    <link rel="manifest" href="manifest.json">
+
+<!-- Older Chrome configuration -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Notes">
+<link rel="icon"
+      sizes="192x192"
+      href="bower_components/note-app/common/images/icon-4x.png">
+
+
+
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+<firebase-app
+    name="notes"
+    api-key="AIzaSyDN3UcIkyrxizdiuaFp29zQX9PszOcfgKk"
+    auth-domain="notes-app-2a66e.firebaseapp.com"
+    database-url="https://notes-app-2a66e.firebaseio.com">
+</firebase-app>
+<note-app></note-app>
+
+  </body>
+</html>
